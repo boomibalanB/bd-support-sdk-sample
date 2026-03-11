@@ -8,14 +8,14 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "BoldDeskChatSDK",
-            targets: ["BoldDeskChatSDK"]
+            name: "BoldDeskSupportSDK",
+            targets: ["BoldDeskSupportSDK"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "BoldDeskChatSDK",
-            path: "./BoldDeskChatSDK.xcframework"
+            name: "BoldDeskSupportSDK",
+            path: "./BoldDeskSupportSDK.xcframework"
         )
     ]
 )

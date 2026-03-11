@@ -1,0 +1,31 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "bd-support-sdk-sample",
+          "kind" : "root",
+          "location" : "/Users/mohammedismailsameer/Desktop/bd-support-sdk-sample",
+          "name" : "bd-support-sdk-sample"
+        },
+        "path" : "/Users/mohammedismailsameer/Desktop/bd-support-sdk-sample/BoldDeskSupportSDK.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "BoldDeskSupportSDK"
+      }
+    ],
+    "dependencies" : [
+
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
