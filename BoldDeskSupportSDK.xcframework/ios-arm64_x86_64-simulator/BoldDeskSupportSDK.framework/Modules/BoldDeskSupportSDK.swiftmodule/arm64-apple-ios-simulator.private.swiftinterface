@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BoldDeskSupportSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import BoldDeskSupportSDK
 import Combine
 import CoreText
@@ -53,7 +53,9 @@ public struct BDSupportSDK {
 }
 public struct BDSDKHome {
   public static func setHeaderLogo(logoURL: Swift.String)
-  public static func setHomeDashboardContent(headerName: Swift.String = "", headerDescription: Swift.String = "", kbTitle: Swift.String = "", kbDescription: Swift.String = "", ticketTitle: Swift.String = "", ticketDescription: Swift.String = "", submitButtonText: Swift.String = "")
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setHomeDashboardContent(headerName: Swift.String? = nil, headerDescription: Swift.String? = nil, kbTitle: Swift.String? = nil, kbDescription: Swift.String? = nil, ticketTitle: Swift.String? = nil, ticketDescription: Swift.String? = nil, submitButtonText: Swift.String? = nil, appBarTitle: Swift.String? = nil)
+  #endif
 }
 public enum SDKTheme {
   case light
