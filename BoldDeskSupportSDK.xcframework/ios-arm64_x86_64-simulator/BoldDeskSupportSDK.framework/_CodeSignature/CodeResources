@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		dHEHNwz05poTOdC6cyh06O0O44Y=
+		T52fELPXq42QDeq1cb4smm76W3U=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		m4dXcdov9WRBazODXUkyvl3ZeGg=
+		8YHfSRLXAyjJ70WLhAGzAs3SNdc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		m4dXcdov9WRBazODXUkyvl3ZeGg=
+		8YHfSRLXAyjJ70WLhAGzAs3SNdc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Iv5B8UFw6dTmBIUDUhRujKq5K9Q=
+		eZCzxxJF44Jo0Qa5Slq3ws6Lnw8=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		dHEHNwz05poTOdC6cyh06O0O44Y=
+		T52fELPXq42QDeq1cb4smm76W3U=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TbW8BIz0VOKQJIIkp0kPhqOFCWw=
+		w1b1l8AmsNLWcMsc4kmyj7saxxo=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TbW8BIz0VOKQJIIkp0kPhqOFCWw=
+		w1b1l8AmsNLWcMsc4kmyj7saxxo=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DMMvTkyHIOBP4EyE5pcvrMWlGxI=
+		kqRVqN1NwcCMlpf7Ji+QDhM5DX8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x6VKUc/WV8Vct9ktVw7skYuh/eE=
+			ymyCsk4nAF2YZJ9g7hmbOTU6Xf4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfAzo95LYvXV7DLbczIMHM/M9Zm/M9flLFRP+EW9SAg=
+			2ecnRV94vX/G+Z/kW7aC1wa67In/qSAu7UQ8pJejKyg=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dMkdsTOzk1WF025X1EU7J/6M3QADstRpNiZKme3RG6Y=
+			Xm+3AoBPS0i437emQAuySlapqBh6rb5zoI/7Jz0UJK8=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -195,28 +195,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dMkdsTOzk1WF025X1EU7J/6M3QADstRpNiZKme3RG6Y=
+			Xm+3AoBPS0i437emQAuySlapqBh6rb5zoI/7Jz0UJK8=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fV1rvIb2D2zU0vXDFNZnIBlbkqcRV7AR1eyZl2tt1uk=
+			Yr1VlwBI/uELzGw/aBzvrPn3jhQECzRiFAKZdYX10m8=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfAzo95LYvXV7DLbczIMHM/M9Zm/M9flLFRP+EW9SAg=
+			2ecnRV94vX/G+Z/kW7aC1wa67In/qSAu7UQ8pJejKyg=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D+coekaBJ08l4/NbiFB9If3gWfLqV+CxcSQpDBdaYVY=
+			dRkls5WhhpjF4FEjipapHf3B3Un4BpOuZzZ/gWvi/9g=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D+coekaBJ08l4/NbiFB9If3gWfLqV+CxcSQpDBdaYVY=
+			dRkls5WhhpjF4FEjipapHf3B3Un4BpOuZzZ/gWvi/9g=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xn5WHdulVklHPG+o7qBDRYdgqbeX78ZJYMegHjt/Yc4=
+			US18sjMINecW8eluDyg/h3CWqQRStSMSEdJoTXgBIE4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -286,7 +286,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NLIw7JJ27fNQxQn1oiGxdzBEEY6h544kL3Vat9XTfc0=
+			03N5wbgkGwgsgSo3jFhMtvHzwO8OIeM2zGALl5HFXQM=
 			</data>
 			<key>optional</key>
 			<true/>

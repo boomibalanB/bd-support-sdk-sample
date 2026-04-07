@@ -34,6 +34,7 @@ public struct BDSupportSDK {
   #endif
   public static func clearallLocalData()
   public static func logout()
+  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration)
   public static func isLoggedIn() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public static func loginWithJWTToken(jwtToken: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
@@ -44,7 +45,9 @@ public struct BDSupportSDK {
   public static func showCreateTicket()
   public static func showHomeDashboard()
   public static func showRecentTickets()
-  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String, directlyShowArticle: Swift.Bool = false, domainUrl: Swift.String?, appKey: Swift.String?)
+  #endif
   public static func enableLogging()
   public static func enablePushNotification(fcmToken: Swift.String)
   public static func isFromMobileSDK(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
@@ -66,6 +69,34 @@ public enum SDKTheme {
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct OfflineSettings : Swift.Codable {
+  public var formIds: [Swift.Int]?
+  public var offlineMessage: Swift.String?
+  public var fileUploadOption: Swift.Int?
+  public var submitButtonText: Swift.String?
+  public var headerDescription: Swift.String?
+  public var offlineSupportMode: Swift.Int?
+  public var confirmationMessage: Swift.String?
+  public var createTicketButtonText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(formIds: [Swift.Int]? = nil, offlineMessage: Swift.String? = nil, fileUploadOption: Swift.Int? = nil, submitButtonText: Swift.String? = nil, headerDescription: Swift.String? = nil, offlineSupportMode: Swift.Int? = nil, confirmationMessage: Swift.String? = nil, createTicketButtonText: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class ChatConfiguration {
+  public var isFromChatSDK: Swift.Bool
+  public var appKey: Swift.String
+  public var brandURL: Swift.String
+  public var email: Swift.String?
+  public var name: Swift.String?
+  public var phoneNo: Swift.String?
+  public var offlineSettings: BoldDeskSupportSDK.OfflineSettings?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil)
+  #endif
+  @objc deinit
 }
 
 
