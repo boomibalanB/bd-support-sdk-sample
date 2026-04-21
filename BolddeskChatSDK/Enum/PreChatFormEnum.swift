@@ -1,0 +1,15 @@
+enum FieldControlName: String {
+    case textBox = "textbox"
+    case textArea = "textarea"
+    case upload = "upload"
+    case url = "url"
+    case regex = "regex"
+    case checkBox = "checkbox"
+    case radioButton = "radiobutton"
+    case numeric = "numeric"
+    case decimal = "decimal"
+    case date = "date"
+    case datetime = "datetime"
+    case dropDown = "dropdown"
+    case multiSelect = "multiselect"
+}
