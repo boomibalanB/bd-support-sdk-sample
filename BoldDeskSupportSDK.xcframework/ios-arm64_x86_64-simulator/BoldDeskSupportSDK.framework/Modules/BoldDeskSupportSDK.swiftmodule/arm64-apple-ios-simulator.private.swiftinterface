@@ -1,0 +1,108 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BoldDeskSupportSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+@_exported import BoldDeskSupportSDK
+import Combine
+import CoreText
+import DeveloperToolsSupport
+import Foundation
+import MobileCoreServices
+import Network
+import PhotosUI
+import QuickLook
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _QuickLook_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
+import os
+public struct BDPortalConfiguration {
+  public static var customFontName: Swift.String?
+}
+public struct BDSupportSDK {
+  public static var applySystemFontSize: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initialize(appId: Swift.String, brandURl: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  public static func clearallLocalData()
+  public static func logout()
+  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration)
+  public static func isLoggedIn() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loginWithJWTToken(jwtToken: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  public static func setPreferredTheme(_ theme: BoldDeskSupportSDK.SDKTheme)
+  public static func applyTheme(accentColor: Swift.String = "", primaryColor: Swift.String = "")
+  public static func showKB()
+  public static func showCreateTicket()
+  public static func showHomeDashboard()
+  public static func showRecentTickets()
+  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String)
+  public static func enableLogging()
+  public static func enablePushNotification(fcmToken: Swift.String)
+  public static func isFromMobileSDK(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @discardableResult
+  public static func processRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @discardableResult
+  public static func openTicketDetailsView(ticketId: Swift.Int) -> Swift.Bool
+  public static var onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)?
+}
+public struct BDSDKHome {
+  public static func setHeaderLogo(logoURL: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func setHomeDashboardContent(headerName: Swift.String? = nil, headerDescription: Swift.String? = nil, kbTitle: Swift.String? = nil, kbDescription: Swift.String? = nil, ticketTitle: Swift.String? = nil, ticketDescription: Swift.String? = nil, submitButtonText: Swift.String? = nil, appBarTitle: Swift.String? = nil)
+  #endif
+}
+public enum SDKTheme {
+  case light
+  case dark
+  case system
+  public static func == (a: BoldDeskSupportSDK.SDKTheme, b: BoldDeskSupportSDK.SDKTheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct OfflineSettings : Swift.Codable {
+  public var formIds: [Swift.Int]?
+  public var brandOptionId: Swift.Int?
+  public var offlineMessage: Swift.String?
+  public var fileUploadOption: Swift.Int?
+  public var submitButtonText: Swift.String?
+  public var headerDescription: Swift.String?
+  public var offlineSupportMode: Swift.Int?
+  public var confirmationMessage: Swift.String?
+  public var createTicketButtonText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(formIds: [Swift.Int]? = nil, brandOptionId: Swift.Int? = nil, offlineMessage: Swift.String? = nil, fileUploadOption: Swift.Int? = nil, submitButtonText: Swift.String? = nil, headerDescription: Swift.String? = nil, offlineSupportMode: Swift.Int? = nil, confirmationMessage: Swift.String? = nil, createTicketButtonText: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class ChatConfiguration {
+  public var isFromChatSDK: Swift.Bool
+  public var appKey: Swift.String
+  public var brandURL: Swift.String
+  public var email: Swift.String?
+  public var name: Swift.String?
+  public var phoneNo: Swift.String?
+  public var offlineSettings: BoldDeskSupportSDK.OfflineSettings?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil)
+  #endif
+  @objc deinit
+}
+
+
+
+
+extension BoldDeskSupportSDK.SDKTheme : Swift.Equatable {}
+extension BoldDeskSupportSDK.SDKTheme : Swift.Hashable {}
