@@ -425,7 +425,7 @@
           {
             "kind": "Function",
             "name": "chatSDKData",
-            "printedName": "chatSDKData(chatData:)",
+            "printedName": "chatSDKData(chatData:onTicketCreatedEventCallBack:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -437,11 +437,51 @@
                 "name": "ChatConfiguration",
                 "printedName": "BoldDeskSupportSDK.ChatConfiguration",
                 "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4DatayAA17ChatConfigurationC_tFZ",
-            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4DatayAA17ChatConfigurationC_tFZ",
+            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SbtcSgtFZ",
+            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SbtcSgtFZ",
             "moduleName": "BoldDeskSupportSDK",
             "static": true,
             "declAttributes": [
@@ -960,6 +1000,7 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "SetterAccess",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -1016,83 +1057,6 @@
                 "static": true,
                 "implicit": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.String, Swift.Bool) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String, Swift.Bool) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(Swift.String, Swift.Bool)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Bool",
-                                "printedName": "Swift.Bool",
-                                "usr": "s:Sb"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvsZ",
-                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvsZ",
-                "moduleName": "BoldDeskSupportSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvMZ",
-                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvMZ",
-                "moduleName": "BoldDeskSupportSDK",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           }
@@ -3638,6 +3602,622 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GeneralSettingsForChat",
+        "printedName": "GeneralSettingsForChat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allowedFileExtensions",
+            "printedName": "allowedFileExtensions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensionsSSSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "includePoweredBy",
+            "printedName": "includePoweredBy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV16includePoweredBySbSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uploadFileSize",
+            "printedName": "uploadFileSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV14uploadFileSizeSiSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMultiLanguageEnabled",
+            "printedName": "isMultiLanguageEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV22isMultiLanguageEnabledSbSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(allowedFileExtensions:includePoweredBy:uploadFileSize:isMultiLanguageEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GeneralSettingsForChat",
+                "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabledACSSSg_SbSgSiSgAItcfc",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabledACSSSg_SbSgSiSgAItcfc",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GeneralSettingsForChat",
+                "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BoldDeskSupportSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BoldDeskSupportSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV",
+        "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV",
+        "moduleName": "BoldDeskSupportSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ChatConfiguration",
         "printedName": "ChatConfiguration",
         "children": [
@@ -4337,9 +4917,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "generalSettings",
+            "printedName": "generalSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GeneralSettingsForChat",
+                    "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                    "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GeneralSettingsForChat",
+                        "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                        "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GeneralSettingsForChat",
+                        "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                        "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC15generalSettingsAA07Generalh3ForE0VSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:offlineSettings:)",
+            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:offlineSettings:generalSettings:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4424,11 +5114,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GeneralSettingsForChat",
+                    "printedName": "BoldDeskSupportSDK.GeneralSettingsForChat",
+                    "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettingsACSb_S3SSgA2kA07OfflineR0VSgtcfc",
-            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettingsACSb_S3SSgA2kA07OfflineR0VSgtcfc",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR0ACSb_S3SSgA2lA07OfflineR0VSgAA07Generalr3ForE0VSgtcfc",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR0ACSb_S3SSgA2lA07OfflineR0VSgAA07Generalr3ForE0VSgtcfc",
             "moduleName": "BoldDeskSupportSDK",
             "declAttributes": [
               "AccessControl"
@@ -5294,29 +5999,36 @@
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 586,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9221,
+      "offset": 9716,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9256,
+      "offset": 9751,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17063,
+      "offset": 17571,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 17095,
+      "offset": 17603,
       "length": 5,
       "value": "false"
     },
@@ -8294,6 +9006,20 @@
       "offset": 98,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Model\/ChatOfflineFormSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1538,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Model\/ChatOfflineFormSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1621,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Model\/DropdownItemModel.swift",

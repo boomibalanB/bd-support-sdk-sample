@@ -34,7 +34,9 @@ public struct BDSupportSDK {
   #endif
   public static func clearallLocalData()
   public static func logout()
-  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration, onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   public static func isLoggedIn() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public static func loginWithJWTToken(jwtToken: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
@@ -53,7 +55,9 @@ public struct BDSupportSDK {
   public static func processRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   @discardableResult
   public static func openTicketDetailsView(ticketId: Swift.Int) -> Swift.Bool
-  public static var onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)?
+  public static var onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)? {
+    get
+  }
 }
 public struct BDSDKHome {
   public static func setHeaderLogo(logoURL: Swift.String)
@@ -87,6 +91,17 @@ public struct OfflineSettings : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct GeneralSettingsForChat : Swift.Codable {
+  public var allowedFileExtensions: Swift.String?
+  public var includePoweredBy: Swift.Bool?
+  public var uploadFileSize: Swift.Int?
+  public var isMultiLanguageEnabled: Swift.Bool?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(allowedFileExtensions: Swift.String? = nil, includePoweredBy: Swift.Bool? = false, uploadFileSize: Swift.Int? = nil, isMultiLanguageEnabled: Swift.Bool? = false)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public class ChatConfiguration {
   public var isFromChatSDK: Swift.Bool
   public var appKey: Swift.String
@@ -95,8 +110,9 @@ public class ChatConfiguration {
   public var name: Swift.String?
   public var phoneNo: Swift.String?
   public var offlineSettings: BoldDeskSupportSDK.OfflineSettings?
+  public var generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil)
+  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil, generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat? = nil)
   #endif
   @objc deinit
 }
