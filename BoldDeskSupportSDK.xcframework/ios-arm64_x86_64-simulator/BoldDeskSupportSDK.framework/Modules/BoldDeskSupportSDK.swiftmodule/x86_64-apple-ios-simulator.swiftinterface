@@ -29,13 +29,14 @@ public struct BDPortalConfiguration {
 }
 public struct BDSupportSDK {
   public static var applySystemFontSize: Swift.Bool
+  public static var isFromChatSDK: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public static func initialize(appId: Swift.String, brandURl: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
   #endif
   public static func clearallLocalData()
   public static func logout()
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration, onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)? = nil)
+  public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration, onTicketCreatedEventCallBack: ((Swift.String, Swift.String?) -> Swift.Void)? = nil)
   #endif
   public static func isLoggedIn() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
@@ -55,7 +56,7 @@ public struct BDSupportSDK {
   public static func processRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   @discardableResult
   public static func openTicketDetailsView(ticketId: Swift.Int) -> Swift.Bool
-  public static var onTicketCreatedEventCallBack: ((Swift.String, Swift.Bool) -> Swift.Void)? {
+  public static var onTicketCreatedEventCallBack: ((Swift.String, Swift.String?) -> Swift.Void)? {
     get
   }
 }

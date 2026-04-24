@@ -278,6 +278,96 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isFromChatSDK",
+            "printedName": "isFromChatSDK",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvpZ",
+            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvpZ",
+            "moduleName": "BoldDeskSupportSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvgZ",
+                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvgZ",
+                "moduleName": "BoldDeskSupportSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvsZ",
+                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvsZ",
+                "moduleName": "BoldDeskSupportSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvMZ",
+                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V010isFromChatD0SbvMZ",
+                "moduleName": "BoldDeskSupportSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(appId:brandURl:_:_:)",
@@ -441,12 +531,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                "printedName": "((Swift.String, Swift.String?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String, Swift.Bool) -> ()",
+                    "printedName": "(Swift.String, Swift.String?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -456,7 +546,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.String, Swift.Bool)",
+                        "printedName": "(Swift.String, Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -466,9 +556,17 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
                           }
                         ]
                       }
@@ -480,8 +578,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SbtcSgtFZ",
-            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SbtcSgtFZ",
+            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SSSgtcSgtFZ",
+            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11chatSDKData0F4Data28onTicketCreatedEventCallBackyAA17ChatConfigurationC_ySS_SSSgtcSgtFZ",
             "moduleName": "BoldDeskSupportSDK",
             "static": true,
             "declAttributes": [
@@ -955,12 +1053,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                "printedName": "((Swift.String, Swift.String?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String, Swift.Bool) -> ()",
+                    "printedName": "(Swift.String, Swift.String?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -970,7 +1068,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.String, Swift.Bool)",
+                        "printedName": "(Swift.String, Swift.String?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -980,9 +1078,17 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
                           }
                         ]
                       }
@@ -993,8 +1099,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvpZ",
-            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvpZ",
+            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SSSgtcSgvpZ",
+            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SSSgtcSgvpZ",
             "moduleName": "BoldDeskSupportSDK",
             "static": true,
             "declAttributes": [
@@ -1013,12 +1119,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.String, Swift.Bool) -> ())?",
+                    "printedName": "((Swift.String, Swift.String?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.String, Swift.Bool) -> ()",
+                        "printedName": "(Swift.String, Swift.String?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1028,7 +1134,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.String, Swift.Bool)",
+                            "printedName": "(Swift.String, Swift.String?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -1038,9 +1144,17 @@
                               },
                               {
                                 "kind": "TypeNominal",
-                                "name": "Bool",
-                                "printedName": "Swift.Bool",
-                                "usr": "s:Sb"
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
                               }
                             ]
                           }
@@ -1051,8 +1165,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvgZ",
-                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SbtcSgvgZ",
+                "usr": "s:18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SSSgtcSgvgZ",
+                "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V28onTicketCreatedEventCallBackySS_SSSgtcSgvgZ",
                 "moduleName": "BoldDeskSupportSDK",
                 "static": true,
                 "implicit": true,
@@ -5965,70 +6079,70 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 326,
+      "offset": 333,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 364,
+      "offset": 371,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 398,
+      "offset": 405,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 431,
+      "offset": 438,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 474,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 586,
+      "offset": 593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9716,
+      "offset": 9726,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9751,
+      "offset": 9761,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17571,
+      "offset": 17584,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 17603,
+      "offset": 17616,
       "length": 5,
       "value": "false"
     },
