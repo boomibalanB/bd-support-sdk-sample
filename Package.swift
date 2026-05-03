@@ -2,25 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "bd-support-sdk-sample",
-    platforms: [
-        .iOS(.v14)
-    ],
+    name: "bd-support-sdk-sampl",
     products: [
+        // Explicitly define the library as static
         .library(
-            name: "BoldDeskSupportSDK",
-            type: .static,
-            targets: ["BoldDeskSupportSDKWrapper"]
-        )
+            name: "bd-support-sdk-sample",
+            type: .static, 
+            targets: ["BoldDeskSupportSDK"]
+        ),
     ],
     targets: [
-        .binaryTarget(
-            name: "BoldDeskSupportSDK",
-            path: "./BoldDeskSupportSDK.xcframework"
-        ),
         .target(
-            name: "BoldDeskSupportSDKWrapper",
-            dependencies: ["BoldDeskSupportSDK"]
-        )
+            name: "BoldDeskSupportSDK",
+            dependencies: []
+        ),
     ]
 )
