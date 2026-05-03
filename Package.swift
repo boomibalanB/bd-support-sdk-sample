@@ -10,13 +10,17 @@ let package = Package(
         .library(
             name: "BoldDeskSupportSDK",
             type: .static,
-            targets: []
+            targets: ["BoldDeskSupportSDKWrapper"]
         )
     ],
     targets: [
         .binaryTarget(
             name: "BoldDeskSupportSDK",
             path: "./BoldDeskSupportSDK.xcframework"
+        ),
+        .target(
+            name: "BoldDeskSupportSDKWrapper",
+            dependencies: ["BoldDeskSupportSDK"]
         )
     ]
 )
