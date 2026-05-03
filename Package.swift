@@ -9,8 +9,8 @@ let package = Package(
     products: [
         .library(
             name: "BoldDeskSupportSDK",
-            type: .static, 
-            targets: ["BoldDeskSupportSDK"]
+            type: .static,
+            targets: []
         )
     ],
     targets: [
