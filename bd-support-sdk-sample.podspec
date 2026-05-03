@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.platform         = :ios, "14.0"
   s.source           = { :git => "https://github.com/boomibalanB/bd-support-sdk-sample.git", :tag => s.version}
   s.vendored_frameworks = "BoldDeskSupportSDK.xcframework"
-  s.static_framework = true
   s.swift_version    = "5.3"
 end
