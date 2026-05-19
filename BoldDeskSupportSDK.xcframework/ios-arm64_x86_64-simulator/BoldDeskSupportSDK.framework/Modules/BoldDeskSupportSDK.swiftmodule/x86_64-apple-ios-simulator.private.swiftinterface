@@ -97,8 +97,9 @@ public struct GeneralSettingsForChat : Swift.Codable {
   public var includePoweredBy: Swift.Bool?
   public var uploadFileSize: Swift.Int?
   public var isMultiLanguageEnabled: Swift.Bool?
+  public var languageCode: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(allowedFileExtensions: Swift.String? = nil, includePoweredBy: Swift.Bool? = false, uploadFileSize: Swift.Int? = nil, isMultiLanguageEnabled: Swift.Bool? = false)
+  public init(allowedFileExtensions: Swift.String? = nil, includePoweredBy: Swift.Bool? = false, uploadFileSize: Swift.Int? = nil, isMultiLanguageEnabled: Swift.Bool? = false, languageCode: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws

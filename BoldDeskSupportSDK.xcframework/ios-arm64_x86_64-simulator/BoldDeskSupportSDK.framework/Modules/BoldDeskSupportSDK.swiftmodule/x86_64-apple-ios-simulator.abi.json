@@ -4160,9 +4160,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "languageCode",
+            "printedName": "languageCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV12languageCodeSSSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(allowedFileExtensions:includePoweredBy:uploadFileSize:isMultiLanguageEnabled:)",
+            "printedName": "init(allowedFileExtensions:includePoweredBy:uploadFileSize:isMultiLanguageEnabled:languageCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4229,11 +4339,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabledACSSSg_SbSgSiSgAItcfc",
-            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabledACSSSg_SbSgSiSgAItcfc",
+            "usr": "s:18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabled12languageCodeACSSSg_SbSgSiSgAjItcfc",
+            "mangledName": "$s18BoldDeskSupportSDK22GeneralSettingsForChatV21allowedFileExtensions16includePoweredBy06uploadJ4Size22isMultiLanguageEnabled12languageCodeACSSSg_SbSgSiSgAjItcfc",
             "moduleName": "BoldDeskSupportSDK",
             "declAttributes": [
               "AccessControl"
@@ -9124,14 +9249,14 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Model\/ChatOfflineFormSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1538,
+      "offset": 1575,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Model\/ChatOfflineFormSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1621,
+      "offset": 1658,
       "length": 5,
       "value": "false"
     },
