@@ -855,7 +855,7 @@
           {
             "kind": "Function",
             "name": "showArticle",
-            "printedName": "showArticle(articleId:articleSlugTitle:)",
+            "printedName": "showArticle(articleId:articleSlugTitle:articleAppBarTitle:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -873,11 +873,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11showArticle9articleId0H9SlugTitleySi_SStFZ",
-            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11showArticle9articleId0H9SlugTitleySi_SStFZ",
+            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V11showArticle9articleId0H9SlugTitle0h6AppBarK0ySi_S2SSgtFZ",
+            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V11showArticle9articleId0H9SlugTitle0h6AppBarK0ySi_S2SSgtFZ",
             "moduleName": "BoldDeskSupportSDK",
             "static": true,
             "declAttributes": [
@@ -6246,28 +6261,35 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9726,
+      "offset": 643,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9761,
+      "offset": 9773,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9808,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 17584,
+      "offset": 17729,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 17616,
+      "offset": 17761,
       "length": 5,
       "value": "false"
     },
@@ -6729,9 +6751,16 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DatePicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 8170,
+      "offset": 8274,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DatePicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8378,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DateTimePicker.swift",
@@ -6757,9 +6786,16 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DateTimePicker.swift",
       "kind": "BooleanLiteral",
-      "offset": 8179,
+      "offset": 8283,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DateTimePicker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8387,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/FilesAttachment\/AttachamentBodyView.swift",
@@ -7884,119 +7920,119 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 4512,
+      "offset": 4560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 4544,
+      "offset": 4592,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 4591,
+      "offset": 4639,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 8450,
+      "offset": 8542,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 8482,
+      "offset": 8574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 8529,
+      "offset": 8621,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 14280,
+      "offset": 14416,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 14312,
+      "offset": 14448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 16087,
+      "offset": 16223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 17585,
+      "offset": 17721,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 17617,
+      "offset": 17753,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 20024,
+      "offset": 20160,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 20054,
+      "offset": 20190,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 20091,
+      "offset": 20227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 22032,
+      "offset": 22168,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 22064,
+      "offset": 22200,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DynamicFormFields.swift",
       "kind": "BooleanLiteral",
-      "offset": 22102,
+      "offset": 22238,
       "length": 5,
       "value": "false"
     },
@@ -8046,6 +8082,13 @@
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/MultiLineTextField.swift",
       "kind": "BooleanLiteral",
       "offset": 487,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/MultiLineTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7254,
       "length": 5,
       "value": "false"
     },
@@ -9620,9 +9663,16 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Style\/CustomTextfieldStyle.swift",
       "kind": "BooleanLiteral",
-      "offset": 2537,
+      "offset": 2584,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Style\/CustomTextfieldStyle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2616,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Theme\/ColorTheme.swift",

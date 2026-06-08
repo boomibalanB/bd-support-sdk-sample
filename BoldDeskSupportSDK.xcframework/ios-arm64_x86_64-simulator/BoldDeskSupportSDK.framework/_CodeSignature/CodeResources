@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LRnWKN3b/GPRyDWSjfBd9X3HO90=
+		UySJBCRu/fhmVyUJY4r9iY3XuPY=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		2LjzDq6s84XJJ/iQ+dvuHuC0V+4=
+		Y4iXp9wT0jZHzLXdKxDcqDQyyDI=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hFMP4VtvKLk93BjBn56aETBHAFU=
+		QVCnnlXZ3nSSwgzgj9Giii2yot8=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hFMP4VtvKLk93BjBn56aETBHAFU=
+		QVCnnlXZ3nSSwgzgj9Giii2yot8=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yzLCQwPRlFS2HxeDCxFcUrIceas=
+		0y3GeIeJnOI/SX/+ZqZyZXseDEk=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2LjzDq6s84XJJ/iQ+dvuHuC0V+4=
+		Y4iXp9wT0jZHzLXdKxDcqDQyyDI=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+lt+5bG0MRro5zx0KeyVNdLjNhY=
+		VZqp/zKoQrXRo0rIuv6tAFgchnc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+lt+5bG0MRro5zx0KeyVNdLjNhY=
+		VZqp/zKoQrXRo0rIuv6tAFgchnc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xtljCDK/TQv4dubv3amdVER6ZMc=
+		8aNCdvL75nDMrNBGT7YX9QsufCU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4XxKBZJKPa/rMpBsyK5rqIjoVbFlPU6dlrdMwQqiU3A=
+			t99BhLHElsgncV3v3zHF7ga8jF3ULDQsPOirJurPMrA=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3OETOgzxX0tzoqXbiPfNsws1YejTGsgHxhrwxiR5MI=
+			rxEfqv+HONPIDqVZKXCFFLbqoTcGAvfroxVR9le0eoQ=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -195,28 +195,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S3OETOgzxX0tzoqXbiPfNsws1YejTGsgHxhrwxiR5MI=
+			rxEfqv+HONPIDqVZKXCFFLbqoTcGAvfroxVR9le0eoQ=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kbrl7kV+KktRVg40O3cftfGatBq40VBv2613aQ0O/YE=
+			h9PRxL1Ccre7xtKfx6e3HbkIJ2yUgpu7n3ojtMCaJkU=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4XxKBZJKPa/rMpBsyK5rqIjoVbFlPU6dlrdMwQqiU3A=
+			t99BhLHElsgncV3v3zHF7ga8jF3ULDQsPOirJurPMrA=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5YZc+pN2/XbRb3X8ti/EQ0ABIs8oYdT8SUP0yhviCkE=
+			pkGZglLH8PMBbo4uLXb3r866+e/obQPE/Lk4GjHj8VU=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -230,14 +230,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5YZc+pN2/XbRb3X8ti/EQ0ABIs8oYdT8SUP0yhviCkE=
+			pkGZglLH8PMBbo4uLXb3r866+e/obQPE/Lk4GjHj8VU=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N1vJ5MCoGA/xGkriho837Gwapvc8Hjr2HKL9JlBTIaU=
+			+J+oltuaNDMYTuXEYOshF2fxqk1MkWJmL7IHwwtPtzQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
