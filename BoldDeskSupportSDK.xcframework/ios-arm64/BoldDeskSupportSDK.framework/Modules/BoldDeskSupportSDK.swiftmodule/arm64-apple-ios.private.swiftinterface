@@ -48,9 +48,7 @@ public struct BDSupportSDK {
   public static func showCreateTicket()
   public static func showHomeDashboard()
   public static func showRecentTickets()
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String, articleAppBarTitle: Swift.String? = nil)
-  #endif
+  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String)
   public static func enableLogging()
   public static func enablePushNotification(fcmToken: Swift.String)
   public static func isFromMobileSDK(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
@@ -115,8 +113,11 @@ public class ChatConfiguration {
   public var phoneNo: Swift.String?
   public var offlineSettings: BoldDeskSupportSDK.OfflineSettings?
   public var generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat?
+  public var workflowDetails: [Swift.String : Any]?
+  public var conversationId: Swift.String?
+  public var createTicketTitleText: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil, generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat? = nil)
+  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil, generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat? = nil, workflowDetails: [Swift.String : Any]? = nil, conversationId: Swift.String? = nil, createTicketTitleText: Swift.String? = nil)
   #endif
   @objc deinit
 }
