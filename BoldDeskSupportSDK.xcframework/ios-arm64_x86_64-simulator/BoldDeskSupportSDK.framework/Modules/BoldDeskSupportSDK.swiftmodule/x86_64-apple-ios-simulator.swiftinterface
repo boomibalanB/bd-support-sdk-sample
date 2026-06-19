@@ -48,7 +48,9 @@ public struct BDSupportSDK {
   public static func showCreateTicket()
   public static func showHomeDashboard()
   public static func showRecentTickets()
-  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func showArticle(articleId: Swift.Int, articleSlugTitle: Swift.String, articleAppBarTitle: Swift.String? = nil)
+  #endif
   public static func enableLogging()
   public static func enablePushNotification(fcmToken: Swift.String)
   public static func isFromMobileSDK(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
