@@ -9,22 +9,29 @@ let package = Package(
     products: [
         .library(
             name: "BoldDeskSupportSDK",
-            targets: ["BoldDeskSupportSDK"] // 💡 Expose the wrapper as your main library product
+            targets: ["BoldDeskSupportSDKWrapper"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/PhoneNumberKit/PhoneNumberKit.git", from: "5.0.3")
+        .package(
+            url: "https://github.com/PhoneNumberKit/PhoneNumberKit.git",
+            from: "5.0.3"
+        )
     ],
     targets: [
         .binaryTarget(
-            name: "BoldDeskSupportSDK",
+            name: "BoldDeskSupportSDKBinary",
             path: "./BoldDeskSupportSDK.xcframework"
         ),
+
         .target(
             name: "BoldDeskSupportSDKWrapper",
             dependencies: [
-                "BoldDeskSupportSDK",
-                .product(name: "PhoneNumberKit", package: "PhoneNumberKit") // 💡 Changed from "PhoneNumberKit-Static"
+                "BoldDeskSupportSDKBinary",
+                .product(
+                    name: "PhoneNumberKit",
+                    package: "PhoneNumberKit"
+                )
             ]
         )
     ]
