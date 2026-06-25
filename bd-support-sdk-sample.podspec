@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/boomibalanB/bd-support-sdk-sample.git", :tag => s.version}
   s.vendored_frameworks = "BoldDeskSupportSDK.xcframework"
   s.swift_version    = "5.3"
-  s.source_files = "Sources/BoldDeskSupportSDKWrapper/**/*.swift"
-  s.dependency "PhoneNumberKit", "~> 4.3.0"
+  s.dependency 'PhoneNumberKit'
+  s.static_framework = false
 end
