@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "BoldDeskSupportSDK",
-            targets: ["BoldDeskSupportSDKWrapper"] // 💡 Expose the wrapper as your main library product
+            targets: ["BoldDeskSupportSDK"] // 💡 Expose the wrapper as your main library product
         )
     ],
     dependencies: [
