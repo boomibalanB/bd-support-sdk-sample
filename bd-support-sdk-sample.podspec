@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.swift_version    = "5.3"
   s.dependency 'PhoneNumberKit'
   s.static_framework = false
-  s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.syncfusion.bd-support-sdk-sample' }
+  s.resources = ["PhoneNumberKit_PhoneNumberKit.bundle"]
 
 end
