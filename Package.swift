@@ -1,4 +1,5 @@
 // swift-tools-version:5.9
+
 import PackageDescription
 
 let package = Package(
@@ -32,7 +33,8 @@ let package = Package(
                     name: "PhoneNumberKit",
                     package: "PhoneNumberKit"
                 )
-            ]
+            ],
+            path: "Sources/BoldDeskSupportSDKWrapper"
         )
     ]
 )
