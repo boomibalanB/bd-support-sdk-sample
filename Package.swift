@@ -15,8 +15,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/PhoneNumberKit/PhoneNumberKit.git",
-            from: "5.0.3"
+            url: "https://github.com/marmelroy/PhoneNumberKit.git",
+            from: "4.3.0"
         )
     ],
     targets: [
