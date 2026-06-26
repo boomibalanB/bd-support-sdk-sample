@@ -1,5 +1,4 @@
 // swift-tools-version:5.9
-
 import PackageDescription
 
 let package = Package(
@@ -10,31 +9,18 @@ let package = Package(
     products: [
         .library(
             name: "BoldDeskSupportSDK",
+            type: .static,
             targets: ["BoldDeskSupportSDKWrapper"]
-        )
-    ],
-    dependencies: [
-        .package(
-            url: "https://github.com/marmelroy/PhoneNumberKit.git",
-            from: "4.3.0"
         )
     ],
     targets: [
         .binaryTarget(
-            name: "BoldDeskSupportSDKBinary",
+            name: "BoldDeskSupportSDK",
             path: "./BoldDeskSupportSDK.xcframework"
         ),
-
         .target(
             name: "BoldDeskSupportSDKWrapper",
-            dependencies: [
-                "BoldDeskSupportSDKBinary",
-                .product(
-                    name: "PhoneNumberKit",
-                    package: "PhoneNumberKit"
-                )
-            ],
-            path: "Sources/BoldDeskSupportSDKWrapper"
+            dependencies: ["BoldDeskSupportSDK"]
         )
     ]
 )

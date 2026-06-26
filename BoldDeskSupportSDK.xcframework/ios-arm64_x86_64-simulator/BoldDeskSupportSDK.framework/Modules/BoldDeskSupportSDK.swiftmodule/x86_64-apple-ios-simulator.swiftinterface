@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import BoldDeskSupportSDK
 import Combine
+import Contacts
 import CoreText
 import DeveloperToolsSupport
 import Foundation
@@ -123,9 +124,293 @@ public class ChatConfiguration {
   #endif
   @objc deinit
 }
+public enum PhoneNumberError : Swift.Error, Swift.Equatable, Swift.Sendable {
+  case generalError
+  case invalidCountryCode
+  case invalidNumber
+  case tooLong
+  case tooShort
+  case deprecated
+  case metadataNotFound
+  case ambiguousNumber(phoneNumbers: Swift.Set<BoldDeskSupportSDK.PhoneNumber>)
+  public static func == (a: BoldDeskSupportSDK.PhoneNumberError, b: BoldDeskSupportSDK.PhoneNumberError) -> Swift.Bool
+}
+extension BoldDeskSupportSDK.PhoneNumberError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public enum PhoneNumberFormat : Swift.String, Swift.Codable, Swift.Sendable {
+  case e164
+  case international
+  case national
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PhoneNumberType : Swift.String, Swift.Codable, Swift.Sendable {
+  case fixedLine
+  case mobile
+  case fixedOrMobile
+  case pager
+  case personalNumber
+  case premiumRate
+  case sharedCost
+  case tollFree
+  case voicemail
+  case voip
+  case uan
+  case unknown
+  case notParsed
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PossibleLengthType : Swift.String, Swift.Codable, Swift.Sendable {
+  case national
+  case localOnly
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension BoldDeskSupportSDK.PhoneNumber {
+  public func adjustedNationalNumber() -> Swift.String
+}
+extension BoldDeskSupportSDK.MetadataTerritory {
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case codeID
+    case countryCode
+    case internationalPrefix
+    case mainCountryForCode
+    case nationalPrefix
+    case nationalPrefixFormattingRule
+    case nationalPrefixForParsing
+    case nationalPrefixTransformRule
+    case preferredExtnPrefix
+    case emergency
+    case fixedLine
+    case generalDesc
+    case mobile
+    case pager
+    case personalNumber
+    case premiumRate
+    case sharedCost
+    case tollFree
+    case voicemail
+    case voip
+    case uan
+    case numberFormats
+    case leadingDigits
+    case availableFormats
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(intValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var intValue: Swift.Int? {
+      get
+    }
+    #endif
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension BoldDeskSupportSDK.MetadataPhoneNumberFormat {
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case pattern
+    case format
+    case intlFormat
+    case leadingDigitsPatterns
+    case nationalPrefixFormattingRule
+    case nationalPrefixOptionalWhenFormatting
+    case domesticCarrierCodeFormattingRule
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(intValue: Swift.Int)
+    #endif
+    public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
+    public var intValue: Swift.Int? {
+      get
+    }
+    #endif
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MetadataTerritory : Swift.Decodable, Swift.Sendable {
+  public let codeID: Swift.String
+  public let countryCode: Swift.UInt64
+  public let internationalPrefix: Swift.String?
+  public let mainCountryForCode: Swift.Bool
+  public let nationalPrefix: Swift.String?
+  public let nationalPrefixFormattingRule: Swift.String?
+  public let nationalPrefixForParsing: Swift.String?
+  public let nationalPrefixTransformRule: Swift.String?
+  public let preferredExtnPrefix: Swift.String?
+  public let emergency: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let fixedLine: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let generalDesc: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let mobile: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let pager: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let personalNumber: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let premiumRate: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let sharedCost: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let tollFree: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let voicemail: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let voip: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let uan: BoldDeskSupportSDK.MetadataPhoneNumberDesc?
+  public let numberFormats: [BoldDeskSupportSDK.MetadataPhoneNumberFormat]
+  public let leadingDigits: Swift.String?
+}
+public struct MetadataPhoneNumberDesc : Swift.Decodable, Swift.Sendable {
+  public let exampleNumber: Swift.String?
+  public let nationalNumberPattern: Swift.String?
+  public let possibleNumberPattern: Swift.String?
+  public let possibleLengths: BoldDeskSupportSDK.MetadataPossibleLengths?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MetadataPossibleLengths : Swift.Decodable, Swift.Sendable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MetadataPhoneNumberFormat : Swift.Decodable, Swift.Sendable {
+  public let pattern: Swift.String?
+  public let format: Swift.String?
+  public let intlFormat: Swift.String?
+  public let leadingDigitsPatterns: [Swift.String]?
+  public var nationalPrefixFormattingRule: Swift.String?
+  public let nationalPrefixOptionalWhenFormatting: Swift.Bool?
+  public let domesticCarrierCodeFormattingRule: Swift.String?
+}
+public struct PhoneNumber : Swift.Sendable {
+  public let numberString: Swift.String
+  public let countryCode: Swift.UInt64
+  public let leadingZero: Swift.Bool
+  public let nationalNumber: Swift.UInt64
+  public let numberExtension: Swift.String?
+  public let type: BoldDeskSupportSDK.PhoneNumberType
+  public let regionID: Swift.String?
+}
+extension BoldDeskSupportSDK.PhoneNumber : Swift.Equatable {
+  public static func == (lhs: BoldDeskSupportSDK.PhoneNumber, rhs: BoldDeskSupportSDK.PhoneNumber) -> Swift.Bool
+}
+extension BoldDeskSupportSDK.PhoneNumber : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BoldDeskSupportSDK.PhoneNumber {
+  public static func notPhoneNumber() -> BoldDeskSupportSDK.PhoneNumber
+  public func notParsed() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var url: Foundation.URL? {
+    get
+  }
+  #endif
+}
+extension BoldDeskSupportSDK.PhoneNumber {
+  @available(*, unavailable, message: "use PhoneNumberUtility instead to produce PhoneNumbers")
+  public init(rawNumber: Swift.String) throws
+  @available(*, unavailable, message: "use PhoneNumberUtility instead to produce PhoneNumbers")
+  public init(rawNumber: Swift.String, region: Swift.String) throws
+}
+public typealias MetadataCallback = () throws -> Foundation.Data?
+final public class PhoneNumberUtility {
+  public static var canUseContactsFramework: Swift.Bool
+  public init(metadataCallback: @escaping BoldDeskSupportSDK.MetadataCallback = defaultMetadataCallback)
+  final public func parse(_ numberString: Swift.String, withRegion region: Swift.String = defaultRegionCode(), ignoreType: Swift.Bool = false, ignorePrefixValidation: Swift.Bool = false) throws -> BoldDeskSupportSDK.PhoneNumber
+  final public func parse(_ numberStrings: [Swift.String], withRegion region: Swift.String = defaultRegionCode(), ignoreType: Swift.Bool = false, shouldReturnFailedEmptyNumbers: Swift.Bool = false, ignorePrefixValidation: Swift.Bool = false) -> [BoldDeskSupportSDK.PhoneNumber]
+  final public func isValidPhoneNumber(_ numberString: Swift.String, withRegion region: Swift.String = defaultRegionCode(), ignoreType: Swift.Bool = false, ignorePrefixValidation: Swift.Bool = false) -> Swift.Bool
+  final public func format(_ phoneNumber: BoldDeskSupportSDK.PhoneNumber, toType formatType: BoldDeskSupportSDK.PhoneNumberFormat, withPrefix prefix: Swift.Bool = true) -> Swift.String
+  final public func allCountries() -> [Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func countries(withCode countryCode: Swift.UInt64) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func mainCountry(forCode countryCode: Swift.UInt64) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func countryCode(for country: Swift.String) -> Swift.UInt64?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func leadingDigits(for country: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getRegionCode(of phoneNumber: BoldDeskSupportSDK.PhoneNumber) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getExampleNumber(forCountry countryCode: Swift.String, ofType type: BoldDeskSupportSDK.PhoneNumberType = .mobile) -> BoldDeskSupportSDK.PhoneNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getFormattedExampleNumber(forCountry countryCode: Swift.String, ofType type: BoldDeskSupportSDK.PhoneNumberType = .mobile, withFormat format: BoldDeskSupportSDK.PhoneNumberFormat = .international, withPrefix prefix: Swift.Bool = true) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func metadata(for country: Swift.String) -> BoldDeskSupportSDK.MetadataTerritory?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func metadata(forCode countryCode: Swift.UInt64) -> [BoldDeskSupportSDK.MetadataTerritory]?
+  #endif
+  final public func possiblePhoneNumberLengths(forCountry country: Swift.String, phoneNumberType: BoldDeskSupportSDK.PhoneNumberType, lengthType: BoldDeskSupportSDK.PossibleLengthType) -> [Swift.Int]
+  final public class func defaultRegionCode() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func defaultMetadataCallback() throws -> Foundation.Data?
+  #endif
+  @objc deinit
+}
 
 
 
 
 extension BoldDeskSupportSDK.SDKTheme : Swift.Equatable {}
 extension BoldDeskSupportSDK.SDKTheme : Swift.Hashable {}
+extension BoldDeskSupportSDK.PhoneNumberFormat : Swift.Equatable {}
+extension BoldDeskSupportSDK.PhoneNumberFormat : Swift.Hashable {}
+extension BoldDeskSupportSDK.PhoneNumberFormat : Swift.RawRepresentable {}
+extension BoldDeskSupportSDK.PhoneNumberType : Swift.Equatable {}
+extension BoldDeskSupportSDK.PhoneNumberType : Swift.Hashable {}
+extension BoldDeskSupportSDK.PhoneNumberType : Swift.RawRepresentable {}
+extension BoldDeskSupportSDK.PossibleLengthType : Swift.Equatable {}
+extension BoldDeskSupportSDK.PossibleLengthType : Swift.Hashable {}
+extension BoldDeskSupportSDK.PossibleLengthType : Swift.RawRepresentable {}
+extension BoldDeskSupportSDK.MetadataTerritory.CodingKeys : Swift.Equatable {}
+extension BoldDeskSupportSDK.MetadataTerritory.CodingKeys : Swift.Hashable {}
+extension BoldDeskSupportSDK.MetadataTerritory.CodingKeys : Swift.RawRepresentable {}
+extension BoldDeskSupportSDK.MetadataPhoneNumberFormat.CodingKeys : Swift.Equatable {}
+extension BoldDeskSupportSDK.MetadataPhoneNumberFormat.CodingKeys : Swift.Hashable {}
+extension BoldDeskSupportSDK.MetadataPhoneNumberFormat.CodingKeys : Swift.RawRepresentable {}
