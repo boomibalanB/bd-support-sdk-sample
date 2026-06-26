@@ -36,7 +36,6 @@ public struct BDSupportSDK {
   #endif
   public static func clearallLocalData()
   public static func logout()
-  public static func clearChatData()
   #if compiler(>=5.3) && $NonescapableTypes
   public static func chatSDKData(chatData: BoldDeskSupportSDK.ChatConfiguration, onTicketCreatedEventCallBack: ((Swift.String, Swift.String?) -> Swift.Void)? = nil)
   #endif

@@ -514,28 +514,6 @@
           },
           {
             "kind": "Function",
-            "name": "clearChatData",
-            "printedName": "clearChatData()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18BoldDeskSupportSDK09BDSupportD0V13clearChatDatayyFZ",
-            "mangledName": "$s18BoldDeskSupportSDK09BDSupportD0V13clearChatDatayyFZ",
-            "moduleName": "BoldDeskSupportSDK",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "chatSDKData",
             "printedName": "chatSDKData(chatData:onTicketCreatedEventCallBack:)",
             "children": [
@@ -14321,28 +14299,28 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10379,
+      "offset": 9823,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10414,
+      "offset": 9858,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 18371,
+      "offset": 17815,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/BoldDeskSDK\/BolddeskSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 18403,
+      "offset": 17847,
       "length": 5,
       "value": "false"
     },
