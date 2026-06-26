@@ -9,18 +9,19 @@ let package = Package(
     products: [
         .library(
             name: "BoldDeskSupportSDK",
-            type: .static,
             targets: ["BoldDeskSupportSDKWrapper"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "BoldDeskSupportSDK",
+            name: "BoldDeskSupportSDKBinary",
             path: "./BoldDeskSupportSDK.xcframework"
         ),
         .target(
             name: "BoldDeskSupportSDKWrapper",
-            dependencies: ["BoldDeskSupportSDK"]
+            dependencies: [
+                "BoldDeskSupportSDKBinary"
+            ]
         )
     ]
 )
