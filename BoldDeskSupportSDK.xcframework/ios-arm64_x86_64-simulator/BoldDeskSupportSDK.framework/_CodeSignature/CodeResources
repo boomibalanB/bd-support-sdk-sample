@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eAzUbNm6uKYpEl6iyaHK1nbVuYE=
+		9JNj9uiVgr/Nqb8uknr9Gd/aYIc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eAzUbNm6uKYpEl6iyaHK1nbVuYE=
+		9JNj9uiVgr/Nqb8uknr9Gd/aYIc=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -186,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjZ1zsI61F3PEO6ud2uF7hFd1bL8kRN3hBTB9K6iDBs=
+			dnMDxZGXFns5hrMtRSA3vRfl2rsenVyBbYK92Sn0W6s=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -221,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjZ1zsI61F3PEO6ud2uF7hFd1bL8kRN3hBTB9K6iDBs=
+			dnMDxZGXFns5hrMtRSA3vRfl2rsenVyBbYK92Sn0W6s=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
