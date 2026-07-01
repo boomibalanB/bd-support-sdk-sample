@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UySJBCRu/fhmVyUJY4r9iY3XuPY=
+		/3YT9eubdW5nW6dGZeO/g8hPpSI=
 		</data>
 		<key>Inter-Bold.ttf</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9JNj9uiVgr/Nqb8uknr9Gd/aYIc=
+		/EHikrlJF1BPMqV3Jl+ZJdhuN94=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YmtYO6PelztQSEQGidooL8VEcyA=
+		vqW31TjCaf6HhQEkbv3NPymXSxI=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9JNj9uiVgr/Nqb8uknr9Gd/aYIc=
+		/EHikrlJF1BPMqV3Jl+ZJdhuN94=
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2p+P2BmBDnUlOvpSNiV5AsLZZCs=
+		1rZ/Hpc2JaqIXedcj41y3ESyrHg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -186,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dnMDxZGXFns5hrMtRSA3vRfl2rsenVyBbYK92Sn0W6s=
+			5sgyAz+DuA5VHIW1HTAMhLruzRNMgzYvHjGrJVXoAj0=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -214,14 +214,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMNTR9iNqoYWFoZ+m9UNHxqkdbiVTQV3n3To9tOBUxU=
+			DhbkfTYuHpTX3mr3nmVjkaIpytbEUZc289q8tb2NIj0=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dnMDxZGXFns5hrMtRSA3vRfl2rsenVyBbYK92Sn0W6s=
+			5sgyAz+DuA5VHIW1HTAMhLruzRNMgzYvHjGrJVXoAj0=
 			</data>
 		</dict>
 		<key>Modules/BoldDeskSupportSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROTNONun/lwWE31L5qzPMJKz/2PT2vzrt1IN1RCZ9Jw=
+			qR3gc+lDyQ23gWQ+eJlAq2S+KwcXDd2VrK62VIGKssA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
