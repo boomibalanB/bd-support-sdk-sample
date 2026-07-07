@@ -12,6 +12,12 @@ let package = Package(
             targets: ["BoldDeskSupportSDKWrapper"]
         )
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/getsentry/sentry-cocoa.git",
+            from: "8.57.0"
+        )
+    ],
     targets: [
         .binaryTarget(
             name: "BoldDeskSupportSDKBinary",
@@ -20,7 +26,8 @@ let package = Package(
         .target(
             name: "BoldDeskSupportSDKWrapper",
             dependencies: [
-                "BoldDeskSupportSDKBinary"
+                "BoldDeskSupportSDKBinary",
+                .product(name: "Sentry", package: "sentry-cocoa")
             ]
         )
     ]
