@@ -119,8 +119,9 @@ public class ChatConfiguration {
   public var workflowDetails: [Swift.String : Any]?
   public var conversationId: Swift.String?
   public var createTicketTitleText: Swift.String?
+  public var ticketFields: [Swift.String : Any]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil, generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat? = nil, workflowDetails: [Swift.String : Any]? = nil, conversationId: Swift.String? = nil, createTicketTitleText: Swift.String? = nil)
+  public init(isFromChatSDK: Swift.Bool, appKey: Swift.String, brandURL: Swift.String, email: Swift.String? = nil, name: Swift.String? = nil, phoneNo: Swift.String? = nil, offlineSettings: BoldDeskSupportSDK.OfflineSettings? = nil, generalSettings: BoldDeskSupportSDK.GeneralSettingsForChat? = nil, workflowDetails: [Swift.String : Any]? = nil, conversationId: Swift.String? = nil, createTicketTitleText: Swift.String? = nil, ticketFields: [Swift.String : Any]? = nil)
   #endif
   @objc deinit
 }

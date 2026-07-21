@@ -5640,9 +5640,158 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "ticketFields",
+            "printedName": "ticketFields",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC12ticketFieldsSDySSypGSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:offlineSettings:generalSettings:workflowDetails:conversationId:createTicketTitleText:)",
+            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:offlineSettings:generalSettings:workflowDetails:conversationId:createTicketTitleText:ticketFields:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5800,11 +5949,39 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleTextACSb_S3SSgA2oA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2Otcfc",
-            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleTextACSb_S3SSgA2oA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2Otcfc",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleText12ticketFieldsACSb_S3SSgA2pA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2pXtcfc",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleText12ticketFieldsACSb_S3SSgA2pA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2pXtcfc",
             "moduleName": "BoldDeskSupportSDK",
             "declAttributes": [
               "AccessControl"
@@ -14552,209 +14729,209 @@
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
       "offset": 259,
-      "length": 12,
-      "value": "\"production\""
+      "length": 13,
+      "value": "\"development\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 306,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 342,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 373,
       "length": 7,
-      "value": "\"4.0.4\""
+      "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 414,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 444,
+      "offset": 445,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 475,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 508,
+      "offset": 509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 537,
+      "offset": 538,
       "length": 9,
       "value": "\"baseUrl\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 563,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 607,
       "length": 15,
       "value": "\"currentDomain\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 638,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 687,
+      "offset": 688,
       "length": 20,
       "value": "\"inlineImageBaseUrl\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 723,
+      "offset": 724,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 778,
+      "offset": 779,
       "length": 11,
       "value": "\"authToken\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 805,
+      "offset": 806,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 851,
+      "offset": 852,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 875,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 917,
       "length": 10,
       "value": "\"brandURl\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 942,
+      "offset": 943,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 988,
       "length": 13,
       "value": "\"mobileSDKId\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1017,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1064,
+      "offset": 1065,
       "length": 13,
       "value": "\"deviceToken\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
+      "offset": 1094,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1141,
+      "offset": 1142,
       "length": 13,
       "value": "\"accentColor\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1170,
+      "offset": 1171,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1218,
+      "offset": 1219,
       "length": 14,
       "value": "\"primaryColor\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1249,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1297,
+      "offset": 1298,
       "length": 21,
       "value": "\"authTokenExpiration\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/AppConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1335,
       "length": 2,
       "value": "\"\""
     },
@@ -15034,21 +15211,14 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/MultiselectDropdown\/MultiSelectDropdownField.swift",
       "kind": "BooleanLiteral",
-      "offset": 671,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/MultiselectDropdown\/MultiSelectDropdownField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1068,
+      "offset": 1019,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/MultiselectDropdown\/MultiSelectDropdownField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1093,
+      "offset": 1044,
       "length": 5,
       "value": "false"
     },
@@ -15118,28 +15288,21 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/SingleSelectDropdown\/SingleSelectDropdownField.swift",
       "kind": "BooleanLiteral",
-      "offset": 708,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/SingleSelectDropdown\/SingleSelectDropdownField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1186,
+      "offset": 1137,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/SingleSelectDropdown\/SingleSelectDropdownField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1219,
+      "offset": 1170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/SingleSelectDropdown\/SingleSelectDropdownField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1258,
+      "offset": 1209,
       "length": 5,
       "value": "false"
     },
@@ -15601,49 +15764,28 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "StringLiteral",
-      "offset": 3594,
-      "length": 24,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ssZ\""
-    },
-    {
-      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
-      "kind": "StringLiteral",
-      "offset": 3647,
-      "length": 21,
-      "value": "\"yyyy-MMM-dd, h:mm a\""
-    },
-    {
-      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
-      "kind": "StringLiteral",
-      "offset": 4172,
+      "offset": 4514,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
-      "kind": "StringLiteral",
-      "offset": 4213,
-      "length": 13,
-      "value": "\"yyyy-MMM-dd\""
-    },
-    {
-      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "BooleanLiteral",
-      "offset": 5358,
+      "offset": 5529,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "IntegerLiteral",
-      "offset": 5389,
+      "offset": 5560,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "Dictionary",
-      "offset": 6961,
+      "offset": 7132,
       "length": 3,
       "value": "[]"
     },
