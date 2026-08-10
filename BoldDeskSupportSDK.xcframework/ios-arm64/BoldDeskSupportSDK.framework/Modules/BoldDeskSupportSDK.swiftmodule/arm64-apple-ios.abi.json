@@ -5052,6 +5052,116 @@
           },
           {
             "kind": "Var",
+            "name": "requesterId",
+            "printedName": "requesterId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvp",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvp",
+            "moduleName": "BoldDeskSupportSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvg",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvg",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvs",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvs",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvM",
+                "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC11requesterIdSSSgvM",
+                "moduleName": "BoldDeskSupportSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "offlineSettings",
             "printedName": "offlineSettings",
             "children": [
@@ -5791,7 +5901,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:offlineSettings:generalSettings:workflowDetails:conversationId:createTicketTitleText:ticketFields:)",
+            "printedName": "init(isFromChatSDK:appKey:brandURL:email:name:phoneNo:requesterId:offlineSettings:generalSettings:workflowDetails:conversationId:createTicketTitleText:ticketFields:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5816,6 +5926,21 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5980,8 +6105,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleText12ticketFieldsACSb_S3SSgA2pA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2pXtcfc",
-            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo15offlineSettings07generalR015workflowDetails14conversationId21createTicketTitleText12ticketFieldsACSb_S3SSgA2pA07OfflineR0VSgAA07Generalr3ForE0VSgSDySSypGSgA2pXtcfc",
+            "usr": "s:18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo11requesterId15offlineSettings07generalT015workflowDetails012conversationR021createTicketTitleText12ticketFieldsACSb_S3SSgA3qA07OfflineT0VSgAA07Generalt3ForE0VSgSDySSypGSgA2qYtcfc",
+            "mangledName": "$s18BoldDeskSupportSDK17ChatConfigurationC06isFromeD06appKey8brandURL5email4name7phoneNo11requesterId15offlineSettings07generalT015workflowDetails012conversationR021createTicketTitleText12ticketFieldsACSb_S3SSgA3qA07OfflineT0VSgAA07Generalt3ForE0VSgSDySSypGSgA2qYtcfc",
             "moduleName": "BoldDeskSupportSDK",
             "declAttributes": [
               "AccessControl"
