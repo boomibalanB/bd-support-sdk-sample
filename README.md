@@ -1,99 +1,34 @@
-# bd-support-sdk-sample
+# BoldDesk Support SDK
 
-# Project Title</inline>
+The **BoldDesk Mobile Support SDK** enables you to integrate a fully functional help center directly into your mobile application. This allows end-users to access support tickets and Knowledge Base (KB) articles inside the app, reducing the need to open a web browser.
 
-A short, punchy one-line description of what your project does.
+With the SDK, you can:
 
----
+*   Create a customizable help center dashboard.
+*   Enable users to submit support requests with attachments.
+*   Offer search and filtering capabilities for KB articles to support self-service.
+*   Track ticket status, reply to agents, update, and close tickets.
+*   Support both **anonymous** and **authenticated** users through JWT-based authentication.
+*   Include push notifications for real-time updates.
 
-## 📌 Table of Contents
-- [About the Project](#about-the-project)
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+The SDK is lightweight, supports theming to match your app’s branding, and guarantees secure authentication.
 
----
+## Key Features
 
-## 🚀 About the Project
+| Feature            | Anonymous | Authenticated |
+| ------------------ | --------- | ------------- |
+| View KB Articles   | ✅         | ✅             |
+| Create Ticket      | ✅         | ✅             |
+| View Tickets       |           | ✅             |
+| Push Notifications |           | ✅             |
 
-Provide an in-depth paragraph about your project. Explain what problem it solves, why you built it, and its main features.
+## Supported Platforms & Prerequisites
 
-### Key Features
-* Feature 1 (e.g., Fast processing speed)
-* Feature 2 (e.g., Clean API integration)
-* Feature 3 (e.g., Cross-platform support)
+| Platform     | Minimum OS Version | Language   | Version                  |
+| ------------ | ------------------ | ---------- | ------------------------ |
+| iOS          | 15.0+              | Swift UI   | 5.3                      |
 
----
+To set up the SDK in BoldDesk, learn more on [How to Configure Mobile SDK in BoldDesk](https://support.bolddesk.com/kb/article/21786)
 
-## 🛠️ Built With
-
-List the major frameworks, languages, or libraries used:
-* **Python** / **JavaScript** / **C++**
-* Node.js</inline>
-* Docker</inline>
-
----
-
-## 🏁 Getting Started
-
-### Prerequisites
-
-List any software, tool, or runtime you need installed before running the program:
-* Git</inline>
-* Python 3.10+</inline> or Node.js 18+</inline>
-
-### Installation
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd your-project-name
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   # or
-   pip install -r requirements.txt
-   ```
-
----
-
-## 💻 Usage
-
-Provide a clear example of how to run your program:
-
-```bash
-python main.py --help
-# or
-npm start
-```
-
-### Sample Output
-```text
-[INFO] Starting service on port 3000...
-[SUCCESS] Connected to database.
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-1. Fork the project.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+## License
+The BoldDesk Support SDK is protected by copyright. See [LICENSE](https://www.bolddesk.com/legal/terms-of-use) for licensing details.
