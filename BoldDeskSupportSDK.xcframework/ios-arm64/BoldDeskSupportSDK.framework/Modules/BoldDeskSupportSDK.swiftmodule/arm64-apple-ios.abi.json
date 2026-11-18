@@ -15096,6 +15096,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/DateTimeSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 1241,
+      "length": 12,
+      "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Constants\/DateTimeSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 21,
+      "value": "\"yyyy-MM-dd HH:mm:ss\""
+    },
+    {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/DateAndDateTimePicker\/DatePicker.swift",
       "kind": "BooleanLiteral",
       "offset": 423,
@@ -15924,30 +15938,44 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "StringLiteral",
-      "offset": 4514,
+      "offset": 4490,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "BooleanLiteral",
-      "offset": 5529,
+      "offset": 5509,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "IntegerLiteral",
-      "offset": 5560,
+      "offset": 5540,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
       "kind": "Dictionary",
-      "offset": 7132,
+      "offset": 7112,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/Common.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13695,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/Common\/CommonAppBar.swift",
@@ -26752,6 +26780,20 @@
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 734,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 811,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "Array",
       "offset": 541,
       "length": 2,
@@ -26760,56 +26802,56 @@
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "Array",
-      "offset": 593,
+      "offset": 930,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "Array",
-      "offset": 641,
+      "offset": 978,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "Array",
-      "offset": 676,
+      "offset": 1013,
       "length": 13,
       "value": "[\"Yes\", \"No\"]"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 802,
+      "offset": 1139,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 840,
+      "offset": 1177,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 873,
+      "offset": 1210,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 905,
+      "offset": 1242,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mohammedismailsameer\/Desktop\/BoldDeskSupportSDK\/BoldDeskSupportSDK\/ViewModel\/CreateTicketViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1026,
+      "offset": 1363,
       "length": 5,
       "value": "false"
     },
